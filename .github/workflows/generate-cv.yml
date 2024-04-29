@@ -21,7 +21,7 @@ jobs:
 
       - uses: xu-cheng/latex-action@v3
         with:
-          root_file: cv_15.tex
+          root_file: rico-cv.tex
 
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
