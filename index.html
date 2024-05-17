@@ -37,7 +37,7 @@
             color: #666;
             margin: 10px 0;
         }
-        a {
+        .button {
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
@@ -46,7 +46,7 @@
             text-decoration: none;
             border-radius: 5px;
         }
-        a:hover {
+        .button:hover {
             background: #0056b3;
         }
         .social-links {
@@ -56,22 +56,25 @@
             margin: 0 10px;
             color: #007bff;
             text-decoration: none;
+            font-size: 24px;
         }
         .social-links a:hover {
-            text-decoration: underline;
+            color: #0056b3;
         }
     </style>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH2N2b2RaaZ4M6FzHF5MHl6A3DqgVnUVT1QeT4mF7C0lIXO4i4E6A7B7Xb9PjoJ4ViT3nTlQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <div class="container">
-    <img src="profile.jpeg" alt="Rico Gu" class="profile-pic">
+    <img src="profile.jpg" alt="Rico Gu" class="profile-pic">
     <h1>Rico Gu</h1>
     <p>Cloud Native Developer</p>
     <p>Welcome to my personal website. You can download my CV from the link below.</p>
-    <a href="rico-cv.pdf" target="_blank">Download My CV</a>
+    <a class="button" href="rico-cv.pdf" target="_blank">Download My CV</a>
     <div class="social-links">
-        <a href="https://www.linkedin.com/in/yuanxun-gu-a601804a" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/ricogu" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/yuanxun-gu-a601804a" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ricogu" target="_blank"><i class="fab fa-github"></i></a>
     </div>
 </div>
 </body>
