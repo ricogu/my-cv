@@ -285,6 +285,24 @@ h6 {
   }
 }
 
+@media (max-width: 768px) {
+  #hero {
+    background-position: center top;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  #hero {
+    background-position: center center;
+  }
+}
+
+@media (min-width: 1201px) {
+  #hero {
+    background-position: center center;
+  }
+}
+
 #hero:before {
   content: "";
   background: rgba(255, 255, 255, 0.8);
