@@ -1,129 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rico Gu - Cloud Native Developer</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            margin: 20px;
-            width: 80%;
-            max-width: 800px;
-        }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-        h1 {
-            color: #333;
-            margin: 0;
-        }
-        p {
-            color: #666;
-            margin: 10px 0;
-        }
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            color: #fff;
-            background: #007bff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .button:hover {
-            background: #0056b3;
-        }
-        .social-links {
-            margin-top: 20px;
-        }
-        .social-links a {
-            margin: 0 10px;
-            color: #007bff;
-            text-decoration: none;
-            font-size: 24px;
-        }
-        .social-links a:hover {
-            color: #0056b3;
-        }
-        .references {
-            margin-top: 20px;
-        }
-        .references p {
-            color: #666;
-        }
-        .visitor-counter {
-            margin-top: 20px;
-            color: #007bff;
-            font-size: 24px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .visitor-counter i {
-            margin-right: 10px;
-        }
-        .visitor-counter span {
-            font-size: 24px;
-            color: #333;
-        }
-    </style>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Rico Gu - Cloud Native Developer</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
+
 <body>
-<div class="container">
-    <img src="profile.jpg" alt="Rico Gu" class="profile-pic">
+
+<!-- ======= Mobile nav toggle button ======= -->
+<i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex flex-column justify-content-center">
+
+  <nav id="navbar" class="navbar nav-menu">
+    <ul>
+      <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+      <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+      <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+      <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+    </ul>
+  </nav><!-- .nav-menu -->
+
+</header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex flex-column justify-content-center">
+  <div class="container" data-aos="zoom-in" data-aos-delay="100">
     <h1>Rico Gu</h1>
-    <p>Cloud Native Developer</p>
-    <p>Welcome to my personal website. You can download my CV from the link below.</p>
-    <a class="button" href="rico-cv.pdf" target="_blank">Download My CV</a>
+    <p>I'm <span class="typed" data-typed-items="Backend developer,SRE Engineer,Test Engineer, Father"></span></p>
     <div class="social-links">
-        <a href="https://www.linkedin.com/in/yuanxun-gu-a601804a" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/ricogu" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com/ricogu/" class="facebook"><i class="bx bxl-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/yuanxun-gu-a601804a" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://github.com/ricogu" class="github"><i class="bx bxl-github"></i></a>
     </div>
-    <div class="references">
-        <h2>Reference Letters</h2>
-        <p>Reference letters from DOCOMO and SAP are available upon request.</p>
-    </div>
-    <div class="visitor-counter">
-        <i class="fas fa-user-friends"></i>
-        <span id="visitorCount">0</span>
-    </div>
-</div>
-<script>
-    (function() {
-        const VISITOR_COUNT_KEY = 'visitorCount';
-        const HAS_VISITED_KEY = 'hasVisited';
+  </div>
+</section><!-- End Hero -->
 
-        if (!localStorage.getItem(HAS_VISITED_KEY)) {
-            let visitorCount = parseInt(localStorage.getItem(VISITOR_COUNT_KEY)) || 0;
-            visitorCount++;
-            localStorage.setItem(VISITOR_COUNT_KEY, visitorCount);
-            localStorage.setItem(HAS_VISITED_KEY, 'true');
-        }
+<main id="main">
 
-        document.getElementById('visitorCount').textContent = localStorage.getItem(VISITOR_COUNT_KEY) || 0;
-    })();
-</script>
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets/img/profile.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Cloud Native Developer</h3>
+          <p class="fst-italic">
+            Experienced Senior DevOps Engineer with a strong background in cloud-native software development, seeking to leverage expertise in innovative cloud services and enabling technologies.
+          </p>
+          <div class="mt-4">
+            <a class="btn btn-primary btn-lg" href="rico-cv.pdf" target="_blank"><i class="bx bxs-download"></i> Download My CV</a>
+          </div>
+          <div class="mt-3">
+            <p>Reference letters from are available upon request.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End About Section -->
+
+  <!-- ======= Resume Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Resume</h2>
+        <p>Here is a summary of my professional background and achievements.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Professional Experience</h3>
+          <div class="resume-item">
+            <h4>Senior DevOps Engineer</h4>
+            <h5>SAP SE, Munich</h5>
+            <p><em>March 2018 - Present</em></p>
+            <ul>
+              <li>Hands-on experience in LLM fine-tuning and inference (Ludwig, Llama factory, Azure/OpenAI API, Argo workflows)</li>
+              <li>Managed Kubernetes clusters via GitOps principles (Helm, Kustomize, ArgoCD)</li>
+              <li>Developed Kubernetes operators and integrated cloud-native services with SAP's business technology platform</li>
+              <li>System DevOps in automotive network project Catena-X (Golang, ArgoCD, Docker, K8S, GitHub Actions)</li>
+            </ul>
+          </div>
+          <div class="resume-item">
+            <h4>Senior Software Developer</h4>
+            <h5>SAP Customer Experience, Munich</h5>
+            <p><em>January 2016 - February 2018</em></p>
+            <ul>
+              <li>Backend development (Golang, Node.js, OpenAPI Spec, Docker, K8S)</li>
+              <li>Implemented CI/CD pipelines and end-to-end tests</li>
+              <li>Conducted API stress tests using Locust framework</li>
+              <li>Guided junior developers and served as Scrum Master</li>
+            </ul>
+          </div>
+          <div class="resume-item">
+            <h4>System DevOps</h4>
+            <h5>SAP Hybris, Munich</h5>
+            <p><em>March 2013 - December 2015</em></p>
+            <ul>
+              <li>Provided consultancy support and technical advice for private cloud platforms</li>
+              <li>Built internal tools for DevOps automation (Java, Spring Boot, Bash, MySQL)</li>
+            </ul>
+          </div>
+          <div class="resume-item">
+            <h4>Research Engineer</h4>
+            <h5>DOCOMO Communications Laboratories Europe, Munich</h5>
+            <p><em>July 2011 - February 2013</em></p>
+            <ul>
+              <li>Researched and developed augmented reality applications and indoor localization technologies</li>
+              <li>Developed Android prototypes and customized DASH video players</li>
+              <li>Presented demos at major events, such as NTT DOCOMO R&D Open House 2011 in Japan</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>Master of Engineering in Mobile Computing</h4>
+            <h5>National University of Singapore, Singapore</h5>
+            <p><em>2010 - 2012</em></p>
+            <ul>
+              <li>Published two Android games on Google Play Store</li>
+              <li>Conducted research in augmented reality and mobile visualization, publishing 6 conference papers and a book chapter</li>
+              <li>Supervised undergraduate dissertations and received multiple awards, including the Splash Award from the Singapore Computer Society</li>
+            </ul>
+          </div>
+          <div class="resume-item">
+            <h4>Bachelor of Engineering in Computer Engineering</h4>
+            <h5>National University of Singapore, Singapore</h5>
+            <p><em>2006 - 2010</em></p>
+            <ul>
+              <li>Final year dissertation on P2P multicast traffic theory</li>
+              <li>Received Dean's List award in 2006 and 2009</li>
+            </ul>
+          </div>
+          <div class="resume-item">
+            <h4>Diploma of Merit in Mechatronic Engineering</h4>
+            <h5>Ngee Ann Polytechnic, Singapore</h5>
+            <p><em>2002 - 2005</em></p>
+            <ul>
+              <li>Designed and implemented a vision-controlled entertaining robot</li>
+              <li>Received multiple awards, including the Innovative Mechanism Design Award and Book Prizes for best performance</li>
+            </ul>
+          </div>
+
+          <h3 class="resume-title">Selected Publications</h3>
+          <div class="resume-item">
+            <ul>
+              <li>W. Kiess, <strong>Yuan Xun Gu</strong>, S. Thakolsri, M. R. Sama and S. Beker, "SimpleCore: A connectionless, best effort, no‐mobility‐supporting 5G core architecture," 2016 IEEE International Conference on Communications Workshops (ICC), Kuala Lumpur, 2016, pp. 367‐372.</li>
+              <li>A. Al‐Nuaimi, R. Huitl, S. Taifour, S. Sarin, X. Song, <strong>Yuan Xun Gu</strong>, E. Steinbach, M. Fahrmair, "Towards location recognition using range images," 2013 IEEE International Conference on Multimedia and Expo (ICME2013), Workshop on Hot Topics in 3D (Hot3D), San José, USA</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Resume Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+      </div>
+
+      <div class="row" data-aos="fade-in">
+
+        <div class="col-lg-6 d-flex align-items-stretch">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>Karl-Breu-Weg 20, 81829 Munich, Germany</p>
+            </div>
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p><a href="mailto:ricogu@gmail.com">ricogu@gmail.com</a></p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>+49 15153858459</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="container">
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyResume -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/typed.js/typed.umd.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
