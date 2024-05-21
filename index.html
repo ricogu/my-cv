@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,6 +73,10 @@
         .references p {
             color: #666;
         }
+        .visitor-counter {
+            margin-top: 20px;
+            color: #333;
+        }
     </style>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -90,6 +96,24 @@
         <h2>Reference Letters</h2>
         <p>Reference letters from DOCOMO and SAP are available upon request.</p>
     </div>
+    <div class="visitor-counter">
+        <p>Number of visitors: <span id="visitorCount">0</span></p>
+    </div>
 </div>
+<script>
+    (function() {
+        const VISITOR_COUNT_KEY = 'visitorCount';
+        const HAS_VISITED_KEY = 'hasVisited';
+
+        if (!localStorage.getItem(HAS_VISITED_KEY)) {
+            let visitorCount = parseInt(localStorage.getItem(VISITOR_COUNT_KEY)) || 0;
+            visitorCount++;
+            localStorage.setItem(VISITOR_COUNT_KEY, visitorCount);
+            localStorage.setItem(HAS_VISITED_KEY, 'true');
+        }
+
+        document.getElementById('visitorCount').textContent = localStorage.getItem(VISITOR_COUNT_KEY) || 0;
+    })();
+</script>
 </body>
 </html>
