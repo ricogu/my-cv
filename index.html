@@ -13,6 +13,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
         }
         .container {
@@ -21,6 +22,9 @@
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            width: 80%;
+            max-width: 800px;
         }
         .profile-pic {
             width: 150px;
@@ -61,6 +65,18 @@
         .social-links a:hover {
             color: #0056b3;
         }
+        .references {
+            margin-top: 20px;
+        }
+        .references a {
+            display: block;
+            margin: 10px 0;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .references a:hover {
+            text-decoration: underline;
+        }
     </style>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -75,6 +91,12 @@
     <div class="social-links">
         <a href="https://www.linkedin.com/in/yuanxun-gu-a601804a" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/ricogu" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="references">
+        <h2>Reference Letters</h2>
+        <a href="reference-docomo1.pdf" target="_blank">Reference Letter from DOCOMO 1</a>
+        <a href="reference-docomo2.pdf" target="_blank">Reference Letter from DOCOMO 2</a>
+        <a href="reference-sap1.pdf" target="_blank">Reference Letter from SAP</a>
     </div>
 </div>
 </body>
