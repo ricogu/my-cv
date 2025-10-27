@@ -12,7 +12,7 @@
 
 % personal data
 \name{Yuanxun}{Gu}
-\title{Cloud Native Developer \& Devops Engineer}
+\title{Site Reliability Engineer \& Cloud Native Software Engineer}
 \address{Karl-Breu-Weg 20}{81829 Munich, Germany}
 \phone[mobile]{+49 15153858459}
 \email{ricogu@gmail.com}
@@ -24,41 +24,54 @@
 
 	\section{Objective}
 	\cvitem{}{
-		Experienced Senior DevOps Engineer with a strong background in cloud-native software development, seeking to leverage expertise in innovative cloud services and enabling technologies.
+        Senior \textbf{Site Reliability Engineer/Cloud Native Software Engineer} with 10+ years of experience designing, automating, and operating large-scale cloud systems. Specialized in \textbf{GitOps, Kubernetes reliability, observability, and DevOps automation} across SAP BTP, Kyma, and Gardener environments. Passionate about declarative infrastructure, reliability engineering, and building self-healing developer platforms.
 	}
+
+    \section{Core Competencies}
+    \cvitem{}{\begin{itemize}
+        \item \textbf{Cloud \& Platforms:} SAP BTP, Kyma, Gardener, Cloud Foundry, Azure
+        \item \textbf{GitOps \& Automation:} FluxCD, ArgoCD, Helm, Kustomize, Crossplane, ESO, Renovate
+        \item \textbf{CI/CD \& Tooling:} GitHub Actions, Jenkins, Azure DevOps, Argo Workflows, Piper
+        \item \textbf{Reliability \& Observability:} SAP BTP Cloud Logging (OpenSearch), SAP BTP Audit Log Service, Dynatrace, MS Teams Alerts, Prometheus
+        \item \textbf{Languages \& Dev Tools:} Go, Java, Python, Bash, Node.js, Docker, Terraform
+    \end{itemize}}
 
 	\section{Work Experience}
 
 	\cventry{Nov 2021 -- Present}{Senior DevOps Engineer}{SAP SE}{Munich}{}{
 		\begin{itemize}
-			\item Hands-on experience in fine tuning and serving LLM (Ludwig, Llama factory, Azure/OpenAI API, Argo workflows, Lorax, vllm)
-			\item Managed Kubernetes clusters via GitOps principles (Helm, Kustomize, ArgoCD)
-			\item Developed Kubernetes operators and integrated cloud-native services with SAP's business technology platform (golang, operatorSDK, kubebuilder)
-			\item System DevOps in automotive network project Catena-X (Golang, ArgoCD, Docker, K8S, GitHub Actions)
+            \item Led GitOps transformation for multi-cluster Kyma/Gardener environments using FluxCD \& ArgoCD to achieve declarative, continuously reconciled infrastructure.
+            \item Built and maintained GitHub App \textit{FlowKeeper} to automate PR governance, freeze windows, reviewer enforcement, and deployment validation --- improving release reliability and auditability.
+            \item Managed CI/CD pipelines across GitHub Actions and Azure DevOps, introducing automated semantic versioning (maven, npm, golang) and integration testing.
+            \item Configured code scanning and automated security analysis (SonarQube, CodeQL, Whitesource, etc) to ensure compliance and early vulnerability detection within delivery pipelines.
+            \item Implemented Vault-based central secret management via External Secrets Operator for secure, cross-cluster credential delivery.
+            \item Operated SAP BTP Cloud Logging (OpenSearch) for centralized log aggregation and analysis across distributed workloads.
+            \item Managed SAP BTP Audit Log Service to ensure compliance-grade traceability of administrative and DevOps operations.
+            \item Integrated Dynatrace metrics with ArgoCD health checks and automated MS Teams alerting pipelines to enhance incident visibility and response time.
+            \item Contributed to LLM-assisted DevOps automation for internal operational intelligence.
 		\end{itemize}
 	}
 
 	\cventry{Mar 2018 -- Oct 2021}{Senior Software Developer}{SAP Customer Experience}{Munich}{}{
 		\begin{itemize}
-			\item Backend development (Golang, Node.js, OpenAPI Spec, Docker, K8S)
-			\item Implemented CI/CD pipelines and end-to-end tests (Jenkins)
-			\item Conducted API stress tests using Locust framework
-			\item Guided junior developers and served as Scrum Master
+            \item Designed and implemented backend microservices in Go and Node.js using OpenAPI, Docker, and Kubernetes.
+            \item Maintain CI/CD pipelines (Jenkins) and end-to-end testing frameworks improving release consistency and build confidence.
+            \item Conducted API stress tests with Locust, optimizing system performance under production-scale loads.
+            \item Mentored junior developers and served as Scrum Master, ensuring delivery predictability and technical quality.
 		\end{itemize}
 	}
 
 	\cventry{Jan 2016 -- Feb 2018}{System DevOps}{SAP Hybris}{Munich}{}{
 		\begin{itemize}
-			\item Provided consultancy support and technical advice for private cloud platforms
-			\item Built internal tools for DevOps automation (Java, Spring Boot, Bash, MySQL)
+            \item Delivered consultancy and operational support for internal private cloud platforms.
+            \item Developed DevOps automation tools (Java Spring Boot, Bash, MySQL) to streamline environment provisioning and monitoring.
 		\end{itemize}
 	}
 
 	\cventry{Sep 2011 -- Dec 2015}{Research Engineer}{DOCOMO Communications Laboratories Europe}{Munich}{}{
 		\begin{itemize}
-			\item Researched and developed augmented reality applications and indoor localization technologies
-			\item Developed Android prototypes and customized DASH video players
-			\item Presented demos at major events, such as NTT DOCOMO R\&D Open House 2011 in Japan
+            \item Conducted applied research in augmented reality and indoor localization, developing Android prototypes and DASH video streaming clients.
+            \item Presented technology demos at major industry events including NTT DOCOMO R\&D Open House 2011 (Japan).
 		\end{itemize}
 	}
 
@@ -74,30 +87,12 @@
 
 	\cventry{Sep 2006 -- May 2009}{Bachelor of Engineering in Computer Engineering}{National University of Singapore}{Singapore}{}{
 		\begin{itemize}
-			\item Final year dissertation on P2P multicast traffic theory
 			\item Received Dean's List award in 2006 and 2009
 		\end{itemize}
 	}
 
-	\cventry{Jul 2003 -- Feb 2006}{Diploma of Merit in Mechatronic Engineering}{Ngee Ann Polytechnic}{Singapore}{}{
-		\begin{itemize}
-			\item Designed and implemented a vision-controlled entertaining robot
-			\item Received multiple awards, including the Innovative Mechanism Design Award and Book Prizes for best performance
-		\end{itemize}
-	}
-
-	\section{Selected Publications}
-	\cvitem{}{[1] W. Kiess,\textbf{Yuan Xun Gu}, S. Thakolsri, M. R. Sama and S. Beker, "SimpleCore: A connectionless, best effort, no‐ mobility‐supporting 5G core architecture," 2016 IEEE International Conference on Communications Workshops (ICC), Kuala Lumpur, 2016, pp. 367‐372.}
-	\cvitem{}{[2] A. Al‐Nuaimi, R. Huitl, S. Taifour, S. Sarin, X. Song,\textbf{Y.X. Gu}, E. Steinbach, M. Fahrmair (2013), Towards location recognition using range images, 2013 IEEE International Conference on Multimedia and Expo (ICME2013), Workshop on Hot Topics in 3D (Hot3D), San José , USA}
-	\cvitem{}{[3] Li, N., \textbf{Gu, Y.X.}, Chang, L., Duh, H.B.L. (2011). Influences of AR‐supported Simulation on Learning Effectiveness in Face‐to‐face Collaborative Learning for Physics. In the Proceedings of the 11th IEEE International Conference on Advanced Learning Technologies,Athens, GA, USA}
-	\cvitem{}{[4] \textbf{Gu, Y. X.}, Li, N., Chang, L. Duh, H.B.L. (2011). A Collaborative Augmented Reality Networked Platform for Edutainment, In T. Huang, L. Alem. Mobile Collaborative Augmented Reality System: Recent Trends. Springer}
-	\cvitem{}{[5] \textbf{Gu, Y. X.}, Koh, R.K.C, Duh, H.B.L., (2010) Facilitating Learning Interests through Mobile Information Visualization, In Proceedings of the 10th IEEE International Conference on Advanced Learning Technologies, Sousse, Tunisia}
-	\cvitem{}{[6] Duh, H.B.L., Chu Yew Yee, S. L.,\textbf{Gu, Y. X.}, Chen, V.H.H. (2010, July) A Narrative‐Driven Design Approach for Casual Games with Children. In Proceedings of the 37th International Conference and Exhibition of Computer Graphics and Interactive Techniques, Los Angelos, USA}
-
 	\section{Interests}
-	\cvitem{}{Video Games, Travel, Food}
+	\cvitem{}{Cloud automation, system reliability, AI agaent, Travel, Food}
 
-	\section{Other Documentations}
-	\cvitem{}{Please check other information on my personal website: \href{https://ricogu.github.io/my-cv}{https://ricogu.github.io/my-cv}}
 
 \end{document}
