@@ -4,15 +4,26 @@ on:
   push:
     branches: [ "main" ]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
 
       - name: Build LaTeX Document
         uses: xu-cheng/latex-action@v3
@@ -33,40 +44,22 @@ jobs:
       - name: Build website (render index.html from template)
         run: python scripts/build-site.py
 
-      - name: Deploy to gh-pages (merge, not replace)
+      - name: Prepare deploy directory
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir -p _site
+          cp -r site/assets _site/assets
+          cp site/.nojekyll _site/.nojekyll
+          cp build/index.html _site/index.html
+          cp rico-cv.pdf _site/rico-cv.pdf
 
-          # Fetch latest gh-pages to avoid race conditions with concurrent runs
-          git fetch origin gh-pages
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
 
-          # Checkout gh-pages into a temp directory
-          git worktree add /tmp/gh-pages-deploy origin/gh-pages
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
 
-          # Copy built artifacts into gh-pages (overwrite only these files)
-          cp build/index.html /tmp/gh-pages-deploy/index.html
-          cp rico-cv.pdf /tmp/gh-pages-deploy/rico-cv.pdf
-
-          # Commit and push if there are changes
-          cd /tmp/gh-pages-deploy
-          git add index.html rico-cv.pdf
-          if git diff --cached --quiet; then
-            echo "No changes to deploy"
-          else
-            git commit -m "deploy: ${{ github.sha }}"
-            # Retry push: fetch & rebase if rejected due to concurrent deploy
-            git push origin HEAD:gh-pages || {
-              git fetch origin gh-pages
-              git rebase origin/gh-pages
-              git push origin HEAD:gh-pages
-            }
-          fi
-
-      - name: Send notification on success
-        if: success()
-        run: echo "Build and deploy succeeded!"
-
-      - name: Send notification on failure
-        if: failure()
-        run: echo "Build and deploy failed!"
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
