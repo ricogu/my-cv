@@ -1,7 +1,7 @@
 personal:
   name: "Rico Gu"
   full_name: "Yuanxun Gu"
-  title: "Cloud Native Developer"
+  title: "Site Reliability Engineer & Cloud Native Software Engineer"
   typed_items: "Backend developer,SRE engineer,Test engineer,Video game lover,a Father of two cute girls"
   email: "ricogu@gmail.com"
   phone: "+49 15153858459"
@@ -11,58 +11,80 @@ personal:
   facebook: "https://www.facebook.com/ricogu/"
 
 about:
-  headline: "Cloud Native Developer"
+  headline: "Site Reliability Engineer & Cloud Native Software Engineer"
   summary: >
-    Experienced Senior DevOps Engineer with a strong background in cloud-native
-    software development, seeking to leverage expertise in innovative cloud
-    services and enabling technologies.
+    Senior Site Reliability Engineer / Cloud Native Software Engineer with 10+
+    years of experience designing, automating, and operating large-scale cloud
+    systems. Specialized in GitOps, Kubernetes reliability, observability, and
+    DevOps automation across SAP BTP, Kyma, and Gardener environments.
+
+core_competencies:
+  - category: "Cloud & Platforms"
+    skills: ["SAP BTP", "Kyma", "Gardener", "Cloud Foundry", "Azure"]
+  - category: "GitOps & Automation"
+    skills: ["FluxCD", "ArgoCD", "Helm", "Kustomize", "Crossplane", "ESO", "Renovate"]
+  - category: "CI/CD & Tooling"
+    skills: ["GitHub Actions", "Jenkins", "Azure DevOps", "Argo Workflows", "Piper"]
+  - category: "Reliability & Observability"
+    skills: ["SAP BTP Cloud Logging", "SAP BTP Audit Log", "Dynatrace", "Prometheus", "MS Teams Alerts"]
+  - category: "Languages & Dev Tools"
+    skills: ["Go", "Java", "Python", "Bash", "Node.js", "Docker", "Terraform"]
+  - category: "LLM & AI Ops"
+    skills: ["Llama", "Ludwig", "vLLM", "Lorax", "Azure OpenAI API", "MCP", "Semantic Search"]
 
 experience:
   - title: "Senior DevOps Engineer"
     company: "SAP SE, Munich"
-    period: "November 2021 - Present"
+    period: "Nov 2021 - Present"
     bullets:
-      - "Hands-on experience in fine tuning and serving LLM (Ludwig, Llama factory, Azure/OpenAI API, Argo workflows, Lorax, vllm)"
-      - "Managed Kubernetes clusters via GitOps principles (Helm, Kustomize, ArgoCD)"
-      - "Developed Kubernetes operators and integrated cloud-native services with SAP BTP (golang, operatorSDK, kubebuilder)"
-      - "System DevOps in automotive network project Catena-X (Golang, ArgoCD, Docker, K8S, GitHub Actions)"
+      - "Led GitOps transformation for multi-cluster Kyma/Gardener environments (FluxCD, ArgoCD)"
+      - "Built GitHub App 'FlowKeeper' for PR governance, freeze windows, and deployment validation"
+      - "Managed CI/CD pipelines across GitHub Actions and Azure DevOps with automated semantic versioning"
+      - "Configured code scanning and security analysis (SonarQube, CodeQL, Whitesource)"
+      - "Implemented Vault-based central secret management via External Secrets Operator (cross-cluster)"
+      - "Developed Kubernetes operators (Go, Operator SDK, Kubebuilder) integrating cloud-native services with SAP BTP"
+      - "Delivered system DevOps for Catena-X automotive data network (Go, ArgoCD, Docker, K8s, GitHub Actions)"
+      - "Centralized log ingestion and analysis via SAP BTP Cloud Logging (OpenSearch)"
+      - "Managed SAP BTP Audit Log Service for compliance-grade traceability"
+      - "Integrated Dynatrace metrics with ArgoCD health checks and automated MS Teams alerting"
+      - "Experimented with LLM hosting and LoRA adapter serving (Llama, Ludwig, vLLM, Lorax on K8s)"
+      - "Built AI-powered developer chatbot with semantic search and MCP tools (GitHub, Azure Pipelines)"
 
   - title: "Senior Software Developer"
     company: "SAP Customer Experience, Munich"
-    period: "March 2018 - October 2021"
+    period: "Mar 2018 - Oct 2021"
     bullets:
-      - "Backend development (Golang, Node.js, OpenAPI Spec, Docker, K8S)"
-      - "Implemented CI/CD pipelines and end-to-end tests (Jenkins)"
-      - "Conducted API stress tests using Locust framework"
-      - "Guided junior developers and served as Scrum Master"
+      - "Designed and implemented backend microservices (Go, Node.js, OpenAPI, Docker, K8s)"
+      - "Maintained CI/CD pipelines (Jenkins) and end-to-end testing frameworks"
+      - "Conducted API stress tests with Locust, optimizing performance under production-scale loads"
+      - "Mentored junior developers and served as Scrum Master"
 
   - title: "System DevOps"
     company: "SAP Hybris, Munich"
-    period: "January 2016 - February 2018"
+    period: "Jan 2016 - Feb 2018"
     bullets:
       - "Provided consultancy support and technical advice for private cloud platforms"
       - "Built internal tools for DevOps automation (Java, Spring Boot, Bash, MySQL)"
 
   - title: "Research Engineer"
     company: "DOCOMO Communications Laboratories Europe, Munich"
-    period: "July 2011 - December 2015"
+    period: "Sep 2011 - Dec 2015"
     bullets:
-      - "Researched and developed augmented reality applications and indoor localization technologies"
-      - "Developed Android prototypes and customized DASH video players"
-      - "Presented demos at major events, such as NTT DOCOMO R&D Open House 2011 in Japan"
+      - "Conducted applied research in augmented reality and indoor localization (Android prototypes, DASH video streaming)"
+      - "Presented technology demos at major events including NTT DOCOMO R&D Open House 2011 (Japan)"
 
 education:
   - degree: "Master of Engineering in Mobile Computing"
     school: "National University of Singapore, Singapore"
-    period: "2009 - 2011"
+    period: "Jun 2009 - Aug 2011"
     bullets:
       - "Published two Android games on Google Play Store"
-      - "Conducted research in augmented reality and mobile visualization, publishing 6 conference papers and a book chapter"
+      - "Conducted research in augmented reality and mobile visualization, publishing 6+ conference papers and a book chapter"
       - "Supervised undergraduate dissertations and received multiple awards, including the Splash Award from the Singapore Computer Society"
 
   - degree: "Bachelor of Engineering in Computer Engineering"
     school: "National University of Singapore, Singapore"
-    period: "2006 - 2009"
+    period: "Sep 2006 - May 2009"
     bullets:
       - "Final year dissertation on P2P multicast traffic theory"
       - "Received Dean's List award in 2006 and 2009"
@@ -73,6 +95,13 @@ education:
     bullets:
       - "Designed and implemented a vision-controlled entertaining robot"
       - "Received multiple awards, including the Innovative Mechanism Design Award and Book Prizes for best performance"
+
+interests:
+  - "Cloud automation"
+  - "System reliability"
+  - "AI agents"
+  - "Travel"
+  - "Food"
 
 publications:
   - 'W. Kiess, <strong>Yuan Xun Gu</strong>, S. Thakolsri, M. R. Sama and S. Beker, "SimpleCore: A connectionless, best effort, no-mobility-supporting 5G core architecture," 2016 IEEE International Conference on Communications Workshops (ICC), Kuala Lumpur, 2016, pp. 367-372.'

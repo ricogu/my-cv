@@ -98,6 +98,21 @@
         <p>Here is a summary of my professional background and achievements.</p>
       </div>
 
+      {% if core_competencies %}
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="resume-title">Core Competencies</h3>
+          <div class="resume-item">
+            <ul>
+              {% for comp in core_competencies %}
+              <li><strong>{{ comp.category }}:</strong> {{ comp.skills | join(', ') }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+
       <div class="row">
         <div class="col-lg-6">
           <h3 class="resume-title">Professional Experience</h3>
@@ -137,6 +152,13 @@
               <li>{{ pub }}</li>
               {% endfor %}
             </ul>
+          </div>
+          {% endif %}
+
+          {% if interests %}
+          <h3 class="resume-title">Interests</h3>
+          <div class="resume-item">
+            <p>{{ interests | join(' · ') }}</p>
           </div>
           {% endif %}
 
