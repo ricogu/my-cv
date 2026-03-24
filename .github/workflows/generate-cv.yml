@@ -38,6 +38,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+          # Fetch latest gh-pages to avoid race conditions with concurrent runs
+          git fetch origin gh-pages
+
           # Checkout gh-pages into a temp directory
           git worktree add /tmp/gh-pages-deploy origin/gh-pages
 
@@ -52,7 +55,12 @@ jobs:
             echo "No changes to deploy"
           else
             git commit -m "deploy: ${{ github.sha }}"
-            git push origin HEAD:gh-pages
+            # Retry push: fetch & rebase if rejected due to concurrent deploy
+            git push origin HEAD:gh-pages || {
+              git fetch origin gh-pages
+              git rebase origin/gh-pages
+              git push origin HEAD:gh-pages
+            }
           fi
 
       - name: Send notification on success
