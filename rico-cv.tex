@@ -22,7 +22,7 @@
 \begin{document}
 	\makecvtitle
 
-	\section{Objective}
+	\section{Summary}
 	\cvitem{}{
         Senior \textbf{Site Reliability Engineer/Cloud Native Software Engineer} with 10+ years of experience designing, automating, and operating large-scale cloud systems. Specialized in \textbf{GitOps, Kubernetes reliability, observability, and DevOps automation} across SAP BTP, Kyma, and Gardener environments. Passionate about declarative infrastructure, reliability engineering, and building self-healing developer platforms.
 	}
@@ -34,6 +34,7 @@
         \item \textbf{CI/CD \& Tooling:} GitHub Actions, Jenkins, Azure DevOps, Argo Workflows, Piper
         \item \textbf{Reliability \& Observability:} SAP BTP Cloud Logging (OpenSearch), SAP BTP Audit Log Service, Dynatrace, MS Teams Alerts, Prometheus
         \item \textbf{Languages \& Dev Tools:} Go, Java, Python, Bash, Node.js, Docker, Terraform
+        \item \textbf{LLM \& AI Ops:} Llama, Ludwig, vLLM, Lorax, Azure OpenAI API, MCP, Semantic Search
     \end{itemize}}
 
 	\section{Work Experience}
@@ -45,17 +46,20 @@
             \item Managed CI/CD pipelines across GitHub Actions and Azure DevOps, introducing automated semantic versioning (maven, npm, golang) and integration testing.
             \item Configured code scanning and automated security analysis (SonarQube, CodeQL, Whitesource, etc) to ensure compliance and early vulnerability detection within delivery pipelines.
             \item Implemented Vault-based central secret management via External Secrets Operator for secure, cross-cluster credential delivery.
+            \item Developed custom Kubernetes operators (Go, Operator SDK, Kubebuilder) integrating cloud-native services with SAP BTP.
+            \item Delivered system DevOps for the Catena-X automotive data network project (Go, ArgoCD, Docker, Kubernetes, GitHub Actions).
             \item Operated SAP BTP Cloud Logging (OpenSearch) for centralized log aggregation and analysis across distributed workloads.
             \item Managed SAP BTP Audit Log Service to ensure compliance-grade traceability of administrative and DevOps operations.
             \item Integrated Dynatrace metrics with ArgoCD health checks and automated MS Teams alerting pipelines to enhance incident visibility and response time.
-            \item Contributed to LLM-assisted DevOps automation for internal operational intelligence.
+            \item Experimented with LLM hosting and LoRA adapter serving using Llama, Ludwig, vLLM, and Lorax on Kubernetes.
+            \item Built an AI-powered developer chatbot integrating semantic search over dev history with MCP tools (GitHub, Azure Pipelines) to help developers gather context and analyze CI/CD pipelines.
 		\end{itemize}
 	}
 
 	\cventry{Mar 2018 -- Oct 2021}{Senior Software Developer}{SAP Customer Experience}{Munich}{}{
 		\begin{itemize}
             \item Designed and implemented backend microservices in Go and Node.js using OpenAPI, Docker, and Kubernetes.
-            \item Maintain CI/CD pipelines (Jenkins) and end-to-end testing frameworks improving release consistency and build confidence.
+            \item Maintained CI/CD pipelines (Jenkins) and end-to-end testing frameworks improving release consistency and build confidence.
             \item Conducted API stress tests with Locust, optimizing system performance under production-scale loads.
             \item Mentored junior developers and served as Scrum Master, ensuring delivery predictability and technical quality.
 		\end{itemize}
@@ -92,7 +96,7 @@
 	}
 
 	\section{Interests}
-	\cvitem{}{Cloud automation, system reliability, AI agaent, Travel, Food}
+	\cvitem{}{Cloud automation, system reliability, AI agents, travel, food}
 
 
 \end{document}
