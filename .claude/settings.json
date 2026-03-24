@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git ls-tree:*)",
+      "Bash(git log:*)",
+      "Bash(git worktree:*)",
+      "Read(//private/tmp/gh-pages-restore/**)",
+      "Bash(gh auth:*)",
+      "Bash(python3 -c \"import jinja2; import yaml; print\\(''Dependencies available''\\)\")",
+      "Bash(pip3 install:*)",
+      "Bash(python3 scripts/build-site.py)",
+      "mcp__github_com__get_file_contents",
+      "mcp__github_com__get_commit",
+      "Bash(git add:*)"
+    ],
+    "additionalDirectories": [
+      "/Users/D065300/IdeaProjects/my-cv/.claude"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if echo \"$CLAUDE_TOOL_INPUT\" | grep -q 'rico-cv.tex'; then echo 'IMPORTANT: rico-cv.tex was modified. Run /sync-cv-data to update cv-data.yaml with abstracted content for the website.'; fi"
+          }
+        ]
+      }
+    ]
+  }
+}

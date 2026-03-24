@@ -1,0 +1,79 @@
+personal:
+  name: "Rico Gu"
+  full_name: "Yuanxun Gu"
+  title: "Cloud Native Developer"
+  typed_items: "Backend developer,SRE engineer,Test engineer,Video game lover,a Father of two cute girls"
+  email: "ricogu@gmail.com"
+  phone: "+49 15153858459"
+  address: "Karl-Breu-Weg 20, 81829 Munich, Germany"
+  linkedin: "https://www.linkedin.com/in/yuanxun-gu-a601804a"
+  github: "https://github.com/ricogu"
+  facebook: "https://www.facebook.com/ricogu/"
+
+about:
+  headline: "Cloud Native Developer"
+  summary: >
+    Experienced Senior DevOps Engineer with a strong background in cloud-native
+    software development, seeking to leverage expertise in innovative cloud
+    services and enabling technologies.
+
+experience:
+  - title: "Senior DevOps Engineer"
+    company: "SAP SE, Munich"
+    period: "November 2021 - Present"
+    bullets:
+      - "Hands-on experience in fine tuning and serving LLM (Ludwig, Llama factory, Azure/OpenAI API, Argo workflows, Lorax, vllm)"
+      - "Managed Kubernetes clusters via GitOps principles (Helm, Kustomize, ArgoCD)"
+      - "Developed Kubernetes operators and integrated cloud-native services with SAP BTP (golang, operatorSDK, kubebuilder)"
+      - "System DevOps in automotive network project Catena-X (Golang, ArgoCD, Docker, K8S, GitHub Actions)"
+
+  - title: "Senior Software Developer"
+    company: "SAP Customer Experience, Munich"
+    period: "March 2018 - October 2021"
+    bullets:
+      - "Backend development (Golang, Node.js, OpenAPI Spec, Docker, K8S)"
+      - "Implemented CI/CD pipelines and end-to-end tests (Jenkins)"
+      - "Conducted API stress tests using Locust framework"
+      - "Guided junior developers and served as Scrum Master"
+
+  - title: "System DevOps"
+    company: "SAP Hybris, Munich"
+    period: "January 2016 - February 2018"
+    bullets:
+      - "Provided consultancy support and technical advice for private cloud platforms"
+      - "Built internal tools for DevOps automation (Java, Spring Boot, Bash, MySQL)"
+
+  - title: "Research Engineer"
+    company: "DOCOMO Communications Laboratories Europe, Munich"
+    period: "July 2011 - December 2015"
+    bullets:
+      - "Researched and developed augmented reality applications and indoor localization technologies"
+      - "Developed Android prototypes and customized DASH video players"
+      - "Presented demos at major events, such as NTT DOCOMO R&D Open House 2011 in Japan"
+
+education:
+  - degree: "Master of Engineering in Mobile Computing"
+    school: "National University of Singapore, Singapore"
+    period: "2009 - 2011"
+    bullets:
+      - "Published two Android games on Google Play Store"
+      - "Conducted research in augmented reality and mobile visualization, publishing 6 conference papers and a book chapter"
+      - "Supervised undergraduate dissertations and received multiple awards, including the Splash Award from the Singapore Computer Society"
+
+  - degree: "Bachelor of Engineering in Computer Engineering"
+    school: "National University of Singapore, Singapore"
+    period: "2006 - 2009"
+    bullets:
+      - "Final year dissertation on P2P multicast traffic theory"
+      - "Received Dean's List award in 2006 and 2009"
+
+  - degree: "Diploma of Merit in Mechatronic Engineering"
+    school: "Ngee Ann Polytechnic, Singapore"
+    period: "2003 - 2006"
+    bullets:
+      - "Designed and implemented a vision-controlled entertaining robot"
+      - "Received multiple awards, including the Innovative Mechanism Design Award and Book Prizes for best performance"
+
+publications:
+  - 'W. Kiess, <strong>Yuan Xun Gu</strong>, S. Thakolsri, M. R. Sama and S. Beker, "SimpleCore: A connectionless, best effort, no-mobility-supporting 5G core architecture," 2016 IEEE International Conference on Communications Workshops (ICC), Kuala Lumpur, 2016, pp. 367-372.'
+  - 'A. Al-Nuaimi, R. Huitl, S. Taifour, S. Sarin, X. Song, <strong>Yuan Xun Gu</strong>, E. Steinbach, M. Fahrmair, "Towards location recognition using range images," 2013 IEEE International Conference on Multimedia and Expo (ICME2013), Workshop on Hot Topics in 3D (Hot3D), San Jose, USA'
