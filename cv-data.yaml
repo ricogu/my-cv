@@ -30,7 +30,7 @@ core_competencies:
   - category: "Languages & Dev Tools"
     skills: ["Go", "Java", "Python", "Bash", "Node.js", "Docker", "Terraform"]
   - category: "LLM & AI Ops"
-    skills: ["Llama", "Ludwig", "vLLM", "Lorax", "Azure OpenAI API", "MCP", "Semantic Search"]
+    skills: ["Llama", "Ludwig", "vLLM", "Lorax", "Azure OpenAI API", "MCP", "Semantic Search", "Claude Code", "OpenCode", "SDD"]
 
 experience:
   - title: "Senior DevOps Engineer"
@@ -49,6 +49,7 @@ experience:
       - "Integrated Dynatrace metrics with ArgoCD health checks and automated MS Teams alerting"
       - "Experimented with LLM hosting and LoRA adapter serving (Llama, Ludwig, vLLM, Lorax on K8s)"
       - "Built AI-powered developer chatbot with semantic search and MCP tools (GitHub, Azure Pipelines)"
+      - "Designed a custom Specification-Driven Development (SDD) schema (sdd-plus-superpowers) integrating AI superpowers skills (brainstorming, TDD, code review, git worktrees) into a structured delivery workflow with Claude Code and OpenCode"
 
   - title: "Senior Software Developer"
     company: "SAP Customer Experience, Munich"
