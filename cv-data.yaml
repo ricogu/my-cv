@@ -38,7 +38,7 @@ experience:
     period: "May 2026 - Present"
     bullets:
       - "Contributing to bare metal provisioning infrastructure for SAP's cloud platform within the IronCore/Gardener ecosystem"
-      - "Modernizing remote cluster delivery tooling and multi-cluster deployment workflows across Gardener host/shoot topologies"
+      - "Modernizing remote cluster delivery tooling and multi-cluster deployment workflows across Gardener seed/shoot and kubeinception topologies"
 
   - title: "Senior DevOps Engineer"
     company: "SAP SE, SAP Business Network, Munich"
