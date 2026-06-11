@@ -33,23 +33,23 @@ core_competencies:
     skills: ["Llama", "Ludwig", "vLLM", "Lorax", "Azure OpenAI API", "MCP", "Semantic Search", "Claude Code", "OpenCode", "SDD"]
 
 experience:
-  - title: "Senior DevOps Engineer"
-    company: "SAP SE, Munich"
-    period: "Nov 2021 - Present"
+  - title: "Senior Software Engineer"
+    company: "SAP SE, SAP Cloud Infrastructure, Munich"
+    period: "May 2026 - Present"
     bullets:
-      - "Led GitOps transformation for multi-cluster Kyma/Gardener environments (FluxCD, ArgoCD)"
-      - "Built GitHub App 'FlowKeeper' for PR governance, freeze windows, and deployment validation"
-      - "Managed CI/CD pipelines across GitHub Actions and Azure DevOps with automated semantic versioning"
-      - "Configured code scanning and security analysis (SonarQube, CodeQL, Whitesource)"
-      - "Implemented Vault-based central secret management via External Secrets Operator (cross-cluster)"
-      - "Developed Kubernetes operators (Go, Operator SDK, Kubebuilder) integrating cloud-native services with SAP BTP"
-      - "Delivered system DevOps for Catena-X automotive data network (Go, ArgoCD, Docker, K8s, GitHub Actions)"
-      - "Centralized log ingestion and analysis via SAP BTP Cloud Logging (OpenSearch)"
-      - "Managed SAP BTP Audit Log Service for compliance-grade traceability"
-      - "Integrated Dynatrace metrics with ArgoCD health checks and automated MS Teams alerting"
-      - "Experimented with LLM hosting and LoRA adapter serving (Llama, Ludwig, vLLM, Lorax on K8s)"
-      - "Built AI-powered developer chatbot with semantic search and MCP tools (GitHub, Azure Pipelines)"
-      - "Designed a custom Specification-Driven Development (SDD) schema (sdd-plus-superpowers) integrating AI superpowers skills (brainstorming, TDD, code review, git worktrees) into a structured delivery workflow with Claude Code and OpenCode"
+      - "Contributing to bare metal provisioning infrastructure for SAP's cloud platform within the IronCore/Gardener ecosystem"
+      - "Modernizing remote cluster delivery tooling and multi-cluster deployment workflows across Gardener host/shoot topologies"
+
+  - title: "Senior DevOps Engineer"
+    company: "SAP SE, SAP Business Network, Munich"
+    bullets:
+      - "Led GitOps transformation for multi-cluster Kyma/Gardener environments (FluxCD, ArgoCD); contributed Helm chart building blocks to `openmcp-project/blueprint-building-blocks` OSS (Crossplane providers for SAP BTP, FluxCD, ESO)"
+      - "Built GitHub App 'FlowKeeper' for PR governance, freeze windows, and deployment validation; managed CI/CD pipelines (GitHub Actions, Azure DevOps) with automated semantic versioning and supply chain security; contributed to SAP OSS tool `pull-request-semver-bumper`"
+      - "Implemented code scanning (SonarQube, CodeQL, Whitesource) and Vault-based secret management via External Secrets Operator (cross-cluster)"
+      - "Developed Kubernetes operators (Go, Operator SDK) integrating cloud-native services with SAP BTP; delivered system DevOps for the Catena-X automotive data network"
+      - "Centralized observability via SAP BTP Cloud Logging (OpenSearch), Audit Log Service, Dynatrace metrics integrated with ArgoCD health checks and MS Teams alerting"
+      - "Experimented with LLM hosting and LoRA adapter serving (Llama, vLLM, Lorax on Kubernetes); built AI developer chatbot with semantic search and MCP tools (GitHub, Azure Pipelines)"
+      - "Adopted and customised sdd-plus-superpowers SDD schema, integrating AI-driven brainstorming, TDD, code review, and git worktrees into a structured delivery workflow with Claude Code and OpenCode"
 
   - title: "Senior Software Developer"
     company: "SAP Customer Experience, Munich"
@@ -61,7 +61,7 @@ experience:
       - "Mentored junior developers and served as Scrum Master"
 
   - title: "System DevOps"
-    company: "SAP Hybris, Munich"
+    company: "Hybris Software GmbH, Munich"
     period: "Jan 2016 - Feb 2018"
     bullets:
       - "Provided consultancy support and technical advice for private cloud platforms"

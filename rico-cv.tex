@@ -8,12 +8,23 @@
 \usepackage[utf8]{inputenc}
 
 % adjust the page margins
-\usepackage[scale=0.86]{geometry}
+\usepackage[scale=0.88]{geometry}
 \raggedbottom
 
 % tighter bullet spacing
 \usepackage{enumitem}
 \setlist[itemize]{nosep, leftmargin=*}
+
+% reduce section spacing
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+
+% tighten moderncv section vertical space
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\section}{\addvspace{2.5ex}}{\addvspace{1ex}}{}{}
+\patchcmd{\section}{\addvspace{1ex}}{\addvspace{0.5ex}}{}{}
+\makeatother
 
 % personal data
 \name{Yuanxun}{Gu}
@@ -44,21 +55,22 @@
 
 	\section{Work Experience}
 
-	\cventry{Nov 2021 -- Present}{Senior DevOps Engineer}{SAP SE}{Munich}{}{
+	\cventry{May 2026 -- Present}{Senior Software Engineer}{SAP SE, SAP Cloud Infrastructure}{Munich}{}{
 		\begin{itemize}
-            \item Led GitOps transformation for multi-cluster Kyma/Gardener environments using FluxCD \& ArgoCD to achieve declarative, continuously reconciled infrastructure.
-            \item Built and maintained GitHub App \textit{FlowKeeper} to automate PR governance, freeze windows, reviewer enforcement, and deployment validation --- improving release reliability and auditability.
-            \item Managed CI/CD pipelines across GitHub Actions and Azure DevOps, introducing automated semantic versioning (maven, npm, golang) and integration testing.
-            \item Configured code scanning and automated security analysis (SonarQube, CodeQL, Whitesource, etc) to ensure compliance and early vulnerability detection within delivery pipelines.
-            \item Implemented Vault-based central secret management via External Secrets Operator for secure, cross-cluster credential delivery.
-            \item Developed custom Kubernetes operators (Go, Operator SDK, Kubebuilder) integrating cloud-native services with SAP BTP.
-            \item Delivered system DevOps for the Catena-X automotive data network project (Go, ArgoCD, Docker, Kubernetes, GitHub Actions).
-            \item Leveraged SAP BTP Cloud Logging (OpenSearch) for centralized log ingestion and analysis across distributed workloads.
-            \item Managed SAP BTP Audit Log Service to ensure compliance-grade traceability of administrative and DevOps operations.
-            \item Integrated Dynatrace metrics with ArgoCD health checks and automated MS Teams alerting pipelines to enhance incident visibility and response time.
-            \item Experimented with LLM hosting and LoRA adapter serving using Llama, Ludwig, vLLM, and Lorax on Kubernetes.
-            \item Built an AI-powered developer chatbot integrating semantic search over dev history with MCP tools (GitHub, Azure Pipelines) to help developers gather context and analyze CI/CD pipelines.
-            \item Designed a custom Specification-Driven Development (SDD) schema (\textit{sdd-plus-superpowers}) integrating AI superpowers skills (brainstorming, TDD, code review, git worktrees) into a structured delivery workflow with Claude Code and OpenCode.
+            \item Contributing to bare metal provisioning infrastructure for SAP's cloud platform within the IronCore/Gardener ecosystem.
+            \item Modernizing remote cluster delivery tooling and multi-cluster deployment workflows across Gardener host/shoot topologies.
+		\end{itemize}
+	}
+
+	\cventry{Nov 2021 -- Apr 2026}{Senior DevOps Engineer}{SAP SE, SAP Business Network}{Munich}{}{
+		\begin{itemize}
+            \item Led GitOps transformation for multi-cluster Kyma/Gardener environments (FluxCD, ArgoCD); contributed Helm chart building blocks to \href{https://github.com/openmcp-project/blueprint-building-blocks}{\textit{openmcp-project/blueprint-building-blocks}} OSS (Crossplane providers for SAP BTP, FluxCD, ESO).
+            \item Built GitHub App \textit{FlowKeeper} for PR governance, freeze windows, and deployment validation; managed CI/CD pipelines (GitHub Actions, Azure DevOps) with automated semantic versioning and supply chain security; contributed to SAP OSS tool \href{https://github.com/marketplace/actions/pr-based-semver-bumper}{\textit{pull-request-semver-bumper}}.
+            \item Implemented code scanning (SonarQube, CodeQL, Whitesource) and Vault-based secret management via External Secrets Operator (cross-cluster).
+            \item Developed Kubernetes operators (Go, Operator SDK) integrating cloud-native services with SAP BTP; delivered system DevOps for the Catena-X automotive data network.
+            \item Centralized observability via SAP BTP Cloud Logging (OpenSearch), Audit Log Service, Dynatrace metrics integrated with ArgoCD health checks and MS Teams alerting.
+            \item Experimented with LLM hosting and LoRA adapter serving (Llama, vLLM, Lorax on Kubernetes); built AI developer chatbot with semantic search and MCP tools (GitHub, Azure Pipelines).
+            \item Adopted and customised \textit{sdd-plus-superpowers} SDD schema, integrating AI-driven brainstorming, TDD, code review, and git worktrees into a structured delivery workflow with Claude Code and OpenCode.
 		\end{itemize}
 	}
 
@@ -71,7 +83,7 @@
 		\end{itemize}
 	}
 
-	\cventry{Jan 2016 -- Feb 2018}{System DevOps}{SAP Hybris}{Munich}{}{
+	\cventry{Jan 2016 -- Feb 2018}{System DevOps}{Hybris Software GmbH}{Munich}{}{
 		\begin{itemize}
             \item Delivered consultancy and operational support for internal private cloud platforms.
             \item Developed DevOps automation tools (Java Spring Boot, Bash, MySQL) to streamline environment provisioning and monitoring.
