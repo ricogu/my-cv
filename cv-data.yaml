@@ -2,7 +2,7 @@ personal:
   name: "Rico Gu"
   full_name: "Yuanxun Gu"
   title: "Senior Platform Engineer & Cloud Native Software Engineer"
-  typed_items: "Backend developer,SRE engineer,Test engineer,Video game lover,a Father of two cute girls"
+  typed_items: "Full Stack Engineer,Platform Engineer,DevOps Engineer"
   email: "ricogu@gmail.com"
   phone: "+49 15153858459"
   address: "Karl-Breu-Weg 20, 81829 Munich, Germany"
@@ -43,6 +43,7 @@ experience:
 
   - title: "Senior DevOps Engineer"
     company: "SAP SE, SAP Business Network, Munich"
+    period: "Nov 2021 - Apr 2026"
     bullets:
       - "Led GitOps transformation for multi-cluster Kyma/Gardener environments using FluxCD, ArgoCD, Helm, Kustomize, and Crossplane"
       - "Built platform and delivery tooling for PR governance, deployment validation, semantic versioning, and CI/CD automation"

@@ -6,8 +6,9 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>{{ personal.name }} - {{ about.headline }}</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="Personal site of {{ personal.name }} ({{ personal.full_name }}) - {{ about.headline }}. Kubernetes, Gardener, IronCore, Cluster API, GitOps, platform reliability, software tooling, and AI-assisted engineering workflows." name="description">
+  <meta content="Platform Engineer, DevOps Engineer, Cloud Native, Kubernetes, Gardener, IronCore, Cluster API, GitOps, SRE, Software Tooling, AI-assisted engineering" name="keywords">
+  <link rel="canonical" href="https://ricogu.github.io/my-cv/">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -71,7 +72,7 @@
       </div>
       <div class="row">
         <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/profile.jpg" class="img-fluid" alt="">
+          <img src="assets/img/profile.jpg" class="img-fluid" alt="{{ personal.name }} profile portrait">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>{{ about.headline }}</h3>
@@ -82,7 +83,7 @@
             <a class="btn btn-primary btn-lg" href="rico-cv.pdf" target="_blank"><i class="bx bxs-download"></i> Download My CV</a>
           </div>
           <div class="mt-3">
-            <p>Reference letters from are available upon request.</p>
+            <p>Reference letters are available upon request.</p>
           </div>
         </div>
       </div>
@@ -176,7 +177,7 @@
         <h2>Contact</h2>
       </div>
 
-      <div class="row" data-aos="fade-in">
+      <div class="row g-4" data-aos="fade-in">
 
         <div class="col-lg-6 d-flex align-items-stretch">
           <div class="info">
@@ -202,6 +203,19 @@
 
         </div>
 
+        <div class="col-lg-6 d-flex align-items-stretch">
+          <div class="contact-cta">
+            <h4>Get in touch</h4>
+            <p>Prefer async? These are the fastest ways to reach me.</p>
+            <div class="cta-buttons">
+              <a class="btn btn-primary btn-lg" href="mailto:{{ personal.email }}"><i class="bx bx-envelope"></i> Email me</a>
+              {% if personal.linkedin %}<a class="btn btn-outline-primary btn-lg" href="{{ personal.linkedin }}" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i> LinkedIn</a>{% endif %}
+              {% if personal.github %}<a class="btn btn-outline-primary btn-lg" href="{{ personal.github }}" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>{% endif %}
+              <a class="btn btn-outline-primary btn-lg" href="rico-cv.pdf" target="_blank" rel="noopener"><i class="bx bxs-download"></i> Download CV</a>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
@@ -213,7 +227,7 @@
 <footer id="footer">
   <div class="container">
     <div class="credits">
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      &copy; {{ personal.name }}
     </div>
   </div>
 </footer><!-- End Footer -->
