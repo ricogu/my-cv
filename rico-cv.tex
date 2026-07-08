@@ -28,7 +28,7 @@
 
 % personal data
 \name{Yuanxun}{Gu}
-\title{Site Reliability Engineer \& Cloud Native Software Engineer}
+\title{Senior Platform Engineer \& Cloud Native Software Engineer}
 \address{Karl-Breu-Weg 20}{81829 Munich, Germany}
 \phone[mobile]{+49 15153858459}
 \email{ricogu@gmail.com}
@@ -40,37 +40,36 @@
 
 	\section{Summary}
 	\cvitem{}{
-        Senior \textbf{Site Reliability Engineer/Cloud Native Software Engineer} with 10+ years of experience designing, automating, and operating large-scale cloud systems. Specialized in \textbf{GitOps, Kubernetes reliability, observability, and DevOps automation} across SAP BTP, Kyma, and Gardener environments. Passionate about declarative infrastructure, reliability engineering, and building self-healing developer platforms.
+        Senior \textbf{Platform Engineer/Cloud Native Software Engineer} with 10+ years of experience building, automating, and operating Kubernetes-based infrastructure platforms. Specialized in \textbf{Gardener, IronCore, Cluster API, GitOps, platform reliability, and software tooling}. Practical experience using AI-assisted engineering workflows to improve delivery quality, operational knowledge reuse, and developer productivity.
 	}
 
     \section{Core Competencies}
     \cvitem{}{\begin{itemize}
-        \item \textbf{Cloud \& Platforms:} SAP BTP, Kyma, Gardener, Cloud Foundry, Azure
-        \item \textbf{GitOps \& Automation:} FluxCD, ArgoCD, Helm, Kustomize, Crossplane, ESO, Renovate
-        \item \textbf{CI/CD \& Tooling:} GitHub Actions, Jenkins, Azure DevOps, Argo Workflows, Piper
-        \item \textbf{Reliability \& Observability:} SAP BTP Cloud Logging (OpenSearch), SAP BTP Audit Log Service, Dynatrace, MS Teams Alerts, Prometheus
-        \item \textbf{Languages \& Dev Tools:} Go, Java, Python, Bash, Node.js, Docker, Terraform
-        \item \textbf{LLM \& AI Ops:} Llama, Ludwig, vLLM, Lorax, Azure OpenAI API, MCP, Semantic Search, Claude Code, OpenCode, SDD
+        \item \textbf{Cloud \& Platforms:} SAP Cloud Infrastructure, Kubernetes, Gardener, IronCore, Cluster API, SAP BTP, Kyma, Azure
+        \item \textbf{GitOps \& Platform Automation:} FluxCD, ArgoCD, Helm, Kustomize, Crossplane, External Secrets Operator, Renovate
+        \item \textbf{Reliability \& Operations:} Cluster lifecycle automation, rollout safety, credential lifecycle, observability, alerting, runbooks
+        \item \textbf{Software Tooling:} Go, Java, Python, Bash, Node.js, GitHub Apps, GitHub Actions, Docker, Terraform
+        \item \textbf{AI-Assisted Engineering:} OpenCode, Claude Code, MCP, semantic search, knowledge automation, SDD, TDD workflows
     \end{itemize}}
 
 	\section{Work Experience}
 
-	\cventry{May 2026 -- Present}{Senior Software Engineer}{SAP SE, SAP Cloud Infrastructure}{Munich}{}{
+	\cventry{May 2026 -- Present}{Senior Platform Engineer}{SAP SE, SAP Cloud Infrastructure}{Munich}{}{
 		\begin{itemize}
-            \item Contributing to bare metal provisioning for SAP's cloud infrastructure within the IronCore/Gardener ecosystem.
-            \item Modernizing remote cluster delivery tooling and multi-cluster deployment workflows across Gardener seed/shoot and kubeinception topologies.
+            \item Contributing to SAP cloud infrastructure platform engineering across Kubernetes, Gardener, IronCore, and Cluster API based environments.
+            \item Improving cluster lifecycle automation, bare-metal provisioning workflows, and multi-cluster delivery tooling for large-scale infrastructure operations.
+            \item Hardening platform reliability through safer rollout mechanisms, credential and configuration lifecycle improvements, and operational automation.
+            \item Developing internal software tooling and AI-assisted engineering workflows to improve delivery quality, knowledge reuse, and developer productivity.
 		\end{itemize}
 	}
 
 	\cventry{Nov 2021 -- Apr 2026}{Senior DevOps Engineer}{SAP SE, SAP Business Network}{Munich}{}{
 		\begin{itemize}
-            \item Led GitOps transformation for multi-cluster Kyma/Gardener environments (FluxCD, ArgoCD); contributed Helm chart building blocks to \href{https://github.com/openmcp-project/blueprint-building-blocks}{\textit{openmcp-project/blueprint-building-blocks}} OSS (Crossplane providers for SAP BTP, FluxCD, ESO).
-            \item Built GitHub App \textit{FlowKeeper} for PR governance, freeze windows, and deployment validation; managed CI/CD pipelines (GitHub Actions, Azure DevOps) with automated semantic versioning and supply chain security; contributed to SAP OSS tool \href{https://github.com/marketplace/actions/pr-based-semver-bumper}{\textit{pull-request-semver-bumper}}.
-            \item Implemented code scanning (SonarQube, CodeQL, Whitesource) and Vault-based secret management via External Secrets Operator (cross-cluster).
-            \item Developed Kubernetes operators (Go, Operator SDK) integrating cloud-native services with SAP BTP; delivered system DevOps for the Catena-X automotive data network.
-            \item Centralized observability via SAP BTP Cloud Logging (OpenSearch), Audit Log Service, Dynatrace metrics integrated with ArgoCD health checks and MS Teams alerting.
-            \item Experimented with LLM hosting and LoRA adapter serving (Llama, vLLM, Lorax on Kubernetes); built AI developer chatbot with semantic search and MCP tools (GitHub, Azure Pipelines).
-            \item Adopted and customised \textit{sdd-plus-superpowers} SDD schema, integrating AI-driven brainstorming, TDD, code review, and git worktrees into a structured delivery workflow with Claude Code and OpenCode.
+            \item Led GitOps transformation for multi-cluster Kyma/Gardener environments using FluxCD, ArgoCD, Helm, Kustomize, and Crossplane.
+            \item Built platform and delivery tooling for PR governance, deployment validation, semantic versioning, and CI/CD automation.
+            \item Implemented Kubernetes operators and cloud-native integrations for SAP BTP and business network platforms.
+            \item Centralized observability, audit logging, and alerting across distributed cloud environments.
+            \item Explored LLM-based developer tooling, semantic search, and Kubernetes-hosted AI services.
 		\end{itemize}
 	}
 

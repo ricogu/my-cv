@@ -1,4 +1,7 @@
 /.idea
+/.playwright-mcp
 /build
 *.log
 *.aux
+*.out
+*.pdf
