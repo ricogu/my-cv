@@ -177,33 +177,9 @@
         <h2>Contact</h2>
       </div>
 
-      <div class="row g-4" data-aos="fade-in">
+      <div class="row g-4 justify-content-center" data-aos="fade-in">
 
-        <div class="col-lg-6 d-flex align-items-stretch">
-          <div class="info">
-            <div class="address">
-              <i class="bi bi-geo-alt"></i>
-              <h4>Location:</h4>
-              <p>{{ personal.address }}</p>
-            </div>
-
-            <div class="email">
-              <i class="bi bi-envelope"></i>
-              <h4>Email:</h4>
-              <p><a href="mailto:{{ personal.email }}">{{ personal.email }}</a></p>
-            </div>
-
-            <div class="phone">
-              <i class="bi bi-phone"></i>
-              <h4>Call:</h4>
-              <p>{{ personal.phone }}</p>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-lg-6 d-flex align-items-stretch">
+        <div class="col-lg-8 d-flex align-items-stretch">
           <div class="contact-cta">
             <h4>Get in touch</h4>
             <p>Prefer async? These are the fastest ways to reach me.</p>
@@ -211,7 +187,6 @@
               <a class="btn btn-primary btn-lg" href="mailto:{{ personal.email }}"><i class="bx bx-envelope"></i> Email me</a>
               {% if personal.linkedin %}<a class="btn btn-outline-primary btn-lg" href="{{ personal.linkedin }}" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i> LinkedIn</a>{% endif %}
               {% if personal.github %}<a class="btn btn-outline-primary btn-lg" href="{{ personal.github }}" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>{% endif %}
-              <a class="btn btn-outline-primary btn-lg" href="rico-cv.pdf" target="_blank" rel="noopener"><i class="bx bxs-download"></i> Download CV</a>
             </div>
           </div>
         </div>
